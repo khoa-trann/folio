@@ -28,7 +28,7 @@ jobs:
         run: |
           git config user.name "folio-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/catalog.json data/covers data/vi
+          git add data/catalog.json data/covers data/vi data/pg_index.json.gz
           git diff --cached --quiet && echo "No changes" && exit 0
           git commit -m "Refresh library $(date -u +%Y-%m-%d)"
           git push

@@ -5,6 +5,7 @@
 const fs = require('fs');
 const fsp = fs.promises;
 const path = require('path');
+const zlib = require('zlib');
 
 // Free-library categories. `seeds` are hand-picked Gutenberg IDs shown first;
 // `pg` matches the Gutenberg CSV (subjects + bookshelves) for later refreshes.
@@ -47,23 +48,96 @@ const STORE_GENRES = [
 
 function makeSources({ fetchWithTimeout, DATA_DIR }) {
   // ---------- Project Gutenberg ----------
-  const PG_CSV = 'https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv';
-  const PG_FILE = path.join(DATA_DIR, 'pg_catalog.csv');
-  let pgIndex = null;
-
-  function parseCsv(text) {
-    const rows = [];
-    let row = [], field = '', q = false;
-    for (let i = 0; i < text.length; i++) {
-      const ch = text[i];
-      if (q) {
-        if (ch === '"') { if (text[i + 1] === '"') { field += '"'; i++; } else q = false; } else field += ch;
-      } else if (ch === '"') q = true;
-      else if (ch === ',') { row.push(field); field = ''; }
-      else if (ch === '\n') { row.push(field.replace(/\r$/, '')); rows.push(row); row = []; field = ''; }
-      else field += ch;
+  // gutenberg.org rate-limits cloud hosts, so every Gutenberg download falls back to the PGLAF mirrors.
+  const PG_HOSTS = ['https://www.gutenberg.org', 'https://aleph.pglaf.org', 'https://gutenberg.pglaf.org'];
+  async function fetchGutenberg(url, ms = 60000) {
+    const p = url.replace(/^https?:\/\/[^/]+/, '');
+    let last;
+    for (const host of PG_HOSTS) {
+      try { return await fetchWithTimeout(host + p, ms); } catch (e) { last = e; }
     }
-    return rows;
+    throw last;
+  }
+  const isGutenbergUrl = url => /^https?:\/\/www\.gutenberg\.org\//.test(url || '');
+
+  // The compact index (only the fields Folio uses) is committed to the repo,
+  // so a fresh server can search Gutenberg without downloading or parsing the 21 MB CSV.
+  const PG_CSV_GZ = '/cache/epub/feeds/pg_catalog.csv.gz';
+  const PG_SNAPSHOT = path.join(DATA_DIR, 'pg_index.json.gz');
+  let pgIndex = null;
+  let pgLoadedAt = 0;
+
+  // Streaming CSV parser: feeds complete rows to onRow without holding the whole file in memory.
+  function csvRows(onRow) {
+    let row = [], field = '', q = false, pendingQuote = false;
+    return chunk => {
+      for (let i = 0; i < chunk.length; i++) {
+        const ch = chunk[i];
+        if (pendingQuote) {
+          pendingQuote = false;
+          if (ch === '"') { field += '"'; continue; }
+          q = false;
+        }
+        if (q) { if (ch === '"') pendingQuote = true; else field += ch; continue; }
+        if (ch === '"') q = true;
+        else if (ch === ',') { row.push(field); field = ''; }
+        else if (ch === '\n') { row.push(field.replace(/\r$/, '')); onRow(row); row = []; field = ''; }
+        else field += ch;
+      }
+    };
+  }
+
+  // Row tuple: [id, title, lang, authors, subjects, categoryShelves]
+  const compactRow = r => [
+    +r[0], r[3].slice(0, 300), r[4], r[5].slice(0, 300), r[6].slice(0, 400),
+    r[8].split(/;\s*/).filter(x => x.startsWith('Category:')).join('; '),
+  ];
+  // Normalized, space-padded copies make whole-word search a plain substring check.
+  const fromTuple = t => ({
+    id: t[0], title: t[1], lang: t[2], authors: t[3], subjects: t[4], shelves: t[5],
+    nt: ` ${norm(t[1])} `, na: ` ${norm(t[3])} `, ns: ` ${norm(t[4])} `,
+  });
+
+  async function downloadPgIndex() {
+    console.log('Downloading Gutenberg catalog…');
+    const res = await fetchGutenberg(PG_CSV_GZ, 180000);
+    const tuples = [];
+    let header = true;
+    const feed = csvRows(r => {
+      if (header) { header = false; return; }
+      if (r[1] === 'Text' && r.length >= 9) tuples.push(compactRow(r));
+    });
+    const gunzip = zlib.createGunzip();
+    gunzip.setEncoding('utf8');
+    const done = new Promise((resolve, reject) => { gunzip.on('data', feed); gunzip.on('end', resolve); gunzip.on('error', reject); });
+    for await (const chunk of res.body) gunzip.write(chunk);
+    gunzip.end();
+    await done;
+    if (tuples.length < 10000) throw new Error(`Gutenberg catalog looks truncated (${tuples.length} rows)`);
+    await fsp.writeFile(PG_SNAPSHOT, zlib.gzipSync(JSON.stringify(tuples)));
+    return tuples;
+  }
+
+  async function readSnapshot() {
+    return JSON.parse(zlib.gunzipSync(await fsp.readFile(PG_SNAPSHOT)).toString('utf8'));
+  }
+
+  // offline: use the committed snapshot only (fast boot). Otherwise refresh it when older than maxAgeMs.
+  async function loadPgIndex(maxAgeMs, { offline = false } = {}) {
+    // Small hosts (Render free: 512 MB) never rebuild the index themselves; the GitHub Action does.
+    if (process.env.FOLIO_PG_SNAPSHOT_ONLY) offline = true;
+    let age = Infinity;
+    try { age = Date.now() - (await fsp.stat(PG_SNAPSHOT)).mtimeMs; } catch {}
+    if (pgIndex && (offline || Date.now() - pgLoadedAt < maxAgeMs)) return pgIndex;
+    let tuples = null;
+    if (age === Infinity || (!offline && age > maxAgeMs)) {
+      try { tuples = await downloadPgIndex(); } catch (e) { console.warn('Gutenberg catalog download failed:', e.message); }
+    }
+    if (!tuples) tuples = await readSnapshot();
+    pgIndex = new Map(tuples.map(t => [t[0], fromTuple(t)]));
+    pgLoadedAt = Date.now();
+    console.log(`Gutenberg catalog: ${pgIndex.size} texts`);
+    return pgIndex;
   }
 
   // "Austen, Jane, 1775-1817; Thomson, Hugh, 1860-1920 [Illustrator]" -> [{name, birth, death}]
@@ -72,25 +146,6 @@ function makeSources({ fetchWithTimeout, DATA_DIR }) {
       const m = a.match(/^(.*?),\s*(?:active\s.*|(-?\d{1,4})\??\s*(?:BCE?)?\s*-\s*(\d{1,4})?.*)$/);
       return m ? { name: m[1].trim(), birth: m[2] ? +m[2] : null, death: m[3] ? +m[3] : null } : { name: a.trim(), birth: null, death: null };
     });
-  }
-
-  async function loadPgIndex(maxAgeMs) {
-    let stale = true;
-    try { stale = Date.now() - (await fsp.stat(PG_FILE)).mtimeMs > maxAgeMs; } catch {}
-    if (pgIndex && !stale) return pgIndex;
-    if (stale) {
-      console.log('Downloading Gutenberg catalog CSV…');
-      const res = await fetchWithTimeout(PG_CSV, 120000);
-      await fsp.writeFile(PG_FILE, await res.text(), 'utf8');
-    }
-    const rows = parseCsv(await fsp.readFile(PG_FILE, 'utf8'));
-    pgIndex = new Map();
-    for (const r of rows.slice(1)) {
-      if (r[1] !== 'Text') continue;
-      pgIndex.set(+r[0], { id: +r[0], title: r[3], lang: r[4], authors: r[5], subjects: r[6], shelves: r[8] });
-    }
-    console.log(`Gutenberg catalog: ${pgIndex.size} texts`);
-    return pgIndex;
   }
 
   function pgCategories(id) {
@@ -249,24 +304,23 @@ function makeSources({ fetchWithTimeout, DATA_DIR }) {
   // Score every CSV row against the query words; title hits weigh most.
   function pgSearch(q, { category, offset = 0, limit = 10 } = {}) {
     if (!pgIndex) return { total: 0, items: [] };
-    const words = norm(q).split(' ').filter(w => w.length > 1);
+    const qn = norm(q);
+    const words = qn.split(' ').filter(w => w.length > 1);
     const cat = category && CATEGORIES.find(c => c.key === category);
     const hits = [];
     for (const r of pgIndex.values()) {
       if (cat && !(cat.seeds.includes(r.id) || cat.pg.test(cat.key === 'self' ? r.subjects : `${r.subjects}; ${r.shelves}`))) continue;
       if (!words.length) { if (cat) hits.push([cat.seeds.includes(r.id) ? 1e6 - cat.seeds.indexOf(r.id) : -r.id, r.id]); continue; }
-      const title = norm(r.title);
-      const tw = title.split(' '), aw = norm(r.authors).split(' '), sw = norm(r.subjects).split(' ');
       // Match whole words, or word prefixes for longer query words ("stoic" → "stoicism").
-      const has = (list, w) => list.some(x => x === w || (w.length >= 4 && x.startsWith(w)));
+      const has = (hay, w) => hay.includes(w.length >= 4 ? ` ${w}` : ` ${w} `);
       let score = 0, all = true;
       for (const w of words) {
-        const t = has(tw, w), a = has(aw, w), s = has(sw, w);
+        const t = has(r.nt, w), a = has(r.na, w), s = has(r.ns, w);
         if (!t && !a && !s) { all = false; break; }
         score += t ? 10 : a ? 7 : 2;
       }
       if (!all) continue;
-      if (title.startsWith(norm(q))) score += 15;
+      if (r.nt.startsWith(` ${qn}`)) score += 15;
       if (r.lang === 'en') score += 6;
       hits.push([score - r.id / 1e6, r.id]);
     }
@@ -454,7 +508,7 @@ function makeSources({ fetchWithTimeout, DATA_DIR }) {
   return {
     loadPgIndex, pgPick, pgBook, pgCategories, seLatest, seHtmlToText, storeChart,
     pgSearch, olSearch, olDescription, iaBook, iaTextToText, wsSearch, wsBook, applePrice,
-    normTitle: norm,
+    normTitle: norm, fetchGutenberg, isGutenbergUrl,
   };
 }
 

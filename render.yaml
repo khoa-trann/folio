@@ -15,3 +15,8 @@ services:
         value: "22"
       - key: REFRESH_TOKEN
         generateValue: true
+      # Free instances have 512 MB: boot from the committed Gutenberg index, never rebuild it here.
+      - key: FOLIO_PG_SNAPSHOT_ONLY
+        value: "1"
+      - key: NODE_OPTIONS
+        value: "--max-old-space-size=320"

@@ -232,6 +232,9 @@ function extractPreface(text) {
   return { label, text: out };
 }
 
+// Gutenberg files go through the mirror fallback; everything else is fetched directly.
+const fetchSource = (url, ms) => (sources.isGutenbergUrl(url) ? sources.fetchGutenberg(url, ms) : fetchWithTimeout(url, ms));
+
 // Ids can contain Vietnamese letters, spaces, "/"… — make them safe as file names.
 const safeName = id => encodeURIComponent(id).replace(/[%*]/g, '_');
 
@@ -243,7 +246,7 @@ async function getBookText(book) {
     text = book.text;                          // Wikisource: fetched with the book record
   } else {
     if (!book.textUrl) throw new Error(`No text for book ${book.id}`);
-    const raw = await (await fetchWithTimeout(book.textUrl, 120000)).text();
+    const raw = await (await fetchSource(book.textUrl, 120000)).text();
     text = book.source === 'standardebooks' ? sources.seHtmlToText(raw)
       : book.source === 'internetarchive' ? sources.iaTextToText(raw)
       : stripGutenberg(raw);
@@ -455,7 +458,7 @@ async function refreshCatalog() {
 async function getCover(book) {
   const file = path.join(COVER_DIR, `${safeName(book.id)}.jpg`);
   try { return await fsp.readFile(file); } catch {}
-  const data = Buffer.from(await (await fetchWithTimeout(book.coverUrl)).arrayBuffer());
+  const data = Buffer.from(await (await fetchSource(book.coverUrl, 30000)).arrayBuffer());
   await fsp.writeFile(file, data);
   return data;
 }
@@ -619,12 +622,14 @@ const server = http.createServer(async (req, res) => {
   for (const d of [DATA_DIR, TEXT_DIR, COVER_DIR, VI_DIR]) await fsp.mkdir(d, { recursive: true });
   sources = makeSources({ fetchWithTimeout, DATA_DIR });
   await loadCatalog();
-  try { await sources.loadPgIndex(REFRESH_INTERVAL_MS); migrateCatalog(); }
+  try { await sources.loadPgIndex(REFRESH_INTERVAL_MS, { offline: true }); migrateCatalog(); }
   catch (e) { console.warn('Gutenberg catalog unavailable:', e.message); }
 
   // `node server.js --refresh-once`: rebuild the catalog snapshot and exit (used by the GitHub Action).
   if (process.argv.includes('--refresh-once')) {
     const before = catalog.updatedAt;
+    // Always rebuild the committed Gutenberg index here (the checkout's file times are not its age).
+    await sources.loadPgIndex(0).catch(e => console.warn('Gutenberg index:', e.message));
     await refreshCatalog();
     if (catalog.updatedAt === before) { console.error('Refresh did not complete.'); process.exit(1); }
     process.exit(0);

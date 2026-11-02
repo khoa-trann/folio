@@ -2,6 +2,7 @@ node_modules/
 # Large or regenerated on demand
 data/texts/
 data/pg_catalog.csv
+# data/pg_index.json.gz is committed on purpose: the compact Gutenberg index the server boots from
 # Local editor/agent settings
 .claude/
 *.log
