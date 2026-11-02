@@ -1,8 +1,581 @@
 {
-  "updatedAt": 1793607534748,
-  "nextRefreshAt": 1793866734748,
+  "updatedAt": 1793611648093,
+  "nextRefreshAt": 1793870848093,
   "cycle": 1,
   "books": [
+    {
+      "id": "455",
+      "source": "gutenberg",
+      "sourceUrl": "https://www.gutenberg.org/ebooks/455",
+      "title": "The University of Hard Knocks",
+      "authors": [
+        {
+          "name": "Parlette, Ralph Albert",
+          "birth": 1870,
+          "death": 1930
+        }
+      ],
+      "subjects": [
+        "Success",
+        "Conduct of life",
+        "Character"
+      ],
+      "categories": [
+        "self",
+        "philosophy"
+      ],
+      "coverUrl": "https://www.gutenberg.org/cache/epub/455/pg455.cover.medium.jpg",
+      "textUrl": "https://www.gutenberg.org/cache/epub/455/pg455.txt",
+      "preface": "Every bump is a lesson. If we learn the lesson with one bump, we do not get that bump again. We do not need it. We have traveled past it. They do not waste the bumps. We get promoted to the next bump.\n\nBut if we are \"naturally bright,\" or there is something else the matter with us, so that we do not learn the lesson of the bump we have just gotten, then that bump must come back and bump us again.\n\nThe tuition in the University of Hard Knocks is not free. Experience is the dearest teacher in the world. Most of us spend our lives in the A-B-C's of getting started.\n\nWhen I was thirteen I knew a great deal more than I do now. There was a sentence in my grammar that disgusted me. It was by some foreigner I had never met. His name was Shakespeare. It was this:\n\n\"Sweet are the uses of adversity; Which, like the toad, ugly and venomous, Wears yet a priceless jewel in its head; And thus our life, exempt from public haunt, Finds tongues in trees, books in running brooks, Sermons in stones, and good in everything.\"",
+      "prefaceLabel": "Chapter I",
+      "words": 38182,
+      "addedAt": 1793611644783,
+      "titleVi": "Đại học Hard Knocks",
+      "prefaceVi": "Mỗi va chạm là một bài học. Nếu chúng ta học bài học bằng một cú va chạm, chúng ta sẽ không gặp lại cú va chạm đó nữa. Chúng tôi không cần nó. Chúng tôi đã đi qua nó. Họ không lãng phí những va chạm. Chúng tôi được thăng chức lên lần tiếp theo.\n\nNhưng nếu chúng ta “thông minh tự nhiên” hoặc có vấn đề gì khác khiến chúng ta không học được bài học về cú va chạm mà chúng ta vừa vấp phải, thì vết sưng đó phải quay lại và va vào chúng ta lần nữa.\n\nHọc phí tại Đại học Hard Knocks không miễn phí. Kinh nghiệm là người thầy thân yêu nhất trên thế giới. Hầu hết chúng ta dành cả cuộc đời mình theo bảng chữ cái A-B-C để bắt đầu.\n\nKhi tôi mười ba tuổi, tôi biết nhiều hơn bây giờ. Có một câu trong ngữ pháp của tôi khiến tôi thấy ghê tởm. Đó là của một người nước ngoài nào đó mà tôi chưa bao giờ gặp. Tên anh ấy là Shakespeare. Đó là điều này:\n\n“Công dụng của nghịch cảnh thật ngọt ngào; Giống như con cóc, xấu xí và độc ác, Đầu nó đeo một viên ngọc vô giá; Và nhờ đó cuộc sống của chúng ta, thoát khỏi sự ám ảnh của công chúng, Tìm thấy lưỡi trên cây, sách trong dòng suối chảy, Bài giảng trong đá, và điều tốt đẹp trong mọi thứ.”",
+      "subjectsVi": [
+        "Thành công",
+        "Ứng xử trong cuộc sống",
+        "Tính cách"
+      ],
+      "translated": true
+    },
+    {
+      "id": "16317",
+      "source": "gutenberg",
+      "sourceUrl": "https://www.gutenberg.org/ebooks/16317",
+      "title": "The Art of Public Speaking",
+      "authors": [
+        {
+          "name": "Esenwein, J. Berg (Joseph Berg)",
+          "birth": 1867,
+          "death": 1946
+        },
+        {
+          "name": "Carnegie, Dale",
+          "birth": 1888,
+          "death": 1955
+        }
+      ],
+      "subjects": [
+        "Public speaking"
+      ],
+      "categories": [
+        "self"
+      ],
+      "coverUrl": "https://www.gutenberg.org/cache/epub/16317/pg16317.cover.medium.jpg",
+      "textUrl": "https://www.gutenberg.org/cache/epub/16317/pg16317.txt",
+      "preface": "APPENDIX A--FIFTY QUESTIONS FOR DEBATE 379 APPENDIX B--THIRTY THEMES FOR SPEECHES, WITH SOURCE-REFERENCES 383 APPENDIX C--SUGGESTIVE SUBJECTS FOR SPEECHES; HINTS FOR TREATMENT 386 APPENDIX D--SPEECHES FOR STUDY AND PRACTISE 394\n\nThe efficiency of a book is like that of a man, in one important respect: its attitude toward its subject is the first source of its power. A book may be full of good ideas well expressed, but if its writer views his subject from the wrong angle even his excellent advice may prove to be ineffective.\n\nThis book stands or falls by its authors' attitude toward its subject. If the best way to teach oneself or others to speak effectively in public is to fill the mind with rules, and to set up fixed standards for the interpretation of thought, the utterance of language, the making of gestures, and all the rest, then this book will be limited in value to such stray ideas throughout its pages as may prove helpful to the reader--as an effort to enforce a group of principles it must be reckoned a failure, because it is then untrue.",
+      "prefaceLabel": "Chapter I",
+      "words": 159406,
+      "addedAt": 1793611644783,
+      "titleVi": "Nghệ thuật nói trước công chúng",
+      "prefaceVi": "PHỤ LỤC A--NĂM MƯƠI CÂU HỎI TRANH LUẬN 379 PHỤ LỤC B--Ba mươi chủ đề cho bài phát biểu, kèm theo nguồn tham khảo 383 PHỤ LỤC C--ĐỐI TƯỢNG GỢI Ý CHO BÀI phát biểu; GỢI Ý ĐIỀU TRỊ 386 PHỤ LỤC D--Bài phát biểu HỌC TẬP VÀ THỰC HÀNH 394\n\nHiệu quả của một cuốn sách cũng giống như của một con người ở một khía cạnh quan trọng: thái độ của nó đối với chủ đề là nguồn sức mạnh đầu tiên của nó. Một cuốn sách có thể chứa đầy những ý tưởng hay được diễn đạt khéo léo, nhưng nếu tác giả nhìn chủ đề của mình từ một góc độ sai lầm thì ngay cả lời khuyên tuyệt vời của ông ta cũng có thể tỏ ra không hiệu quả.\n\nCuốn sách này đứng vững hay thất bại tùy thuộc vào thái độ của tác giả đối với chủ đề của nó. Nếu cách tốt nhất để dạy bản thân hoặc người khác nói chuyện hiệu quả trước đám đông là lấp đầy tâm trí bằng các quy tắc và thiết lập các tiêu chuẩn cố định cho việc diễn giải suy nghĩ, cách phát ngôn ngôn ngữ, cử chỉ và tất cả những thứ còn lại, thì cuốn sách này sẽ bị giới hạn về giá trị đối với những ý tưởng lạc lối xuyên suốt các trang của nó vì chúng có thể tỏ ra hữu ích cho người đọc - như một nỗ lực để thực thi một nhóm nguyên tắc, nó phải được coi là một thất bại, bởi vì khi đó nó không đúng sự thật.",
+      "subjectsVi": [
+        "Nói trước công chúng"
+      ],
+      "translated": true
+    },
+    {
+      "id": "135",
+      "source": "gutenberg",
+      "sourceUrl": "https://www.gutenberg.org/ebooks/135",
+      "title": "Les Misérables",
+      "authors": [
+        {
+          "name": "Hugo, Victor",
+          "birth": 1802,
+          "death": 1885
+        }
+      ],
+      "subjects": [
+        "Historical fiction",
+        "Orphans -- Fiction",
+        "Paris (France) -- Fiction",
+        "Epic literature"
+      ],
+      "categories": [
+        "classics"
+      ],
+      "coverUrl": "https://www.gutenberg.org/cache/epub/135/pg135.cover.medium.jpg",
+      "textUrl": "https://www.gutenberg.org/cache/epub/135/pg135.txt",
+      "preface": "So long as there shall exist, by virtue of law and custom, decrees of damnation pronounced by society, artificially creating hells amid the civilization of earth, and adding the element of human fate to divine destiny; so long as the three great problems of the century—the degradation of man through pauperism, the corruption of woman through hunger, the crippling of children through lack of light—are unsolved; so long as social asphyxia is possible in any part of the world;—in other words, and with a still wider significance, so long as ignorance and poverty exist on earth, books of the nature of Les Misérables cannot fail to be of use.\n\nIn 1815, M. …",
+      "prefaceLabel": "Preface",
+      "words": 565612,
+      "addedAt": 1793611644783,
+      "titleVi": "Những người khốn khổ",
+      "prefaceVi": "Chừng nào còn tồn tại, theo luật pháp và phong tục, các sắc lệnh trừng phạt do xã hội ban hành, tạo ra địa ngục một cách nhân tạo giữa nền văn minh của trái đất, và thêm yếu tố số phận con người vào vận mệnh thiêng liêng; chừng nào ba vấn đề lớn của thế kỷ – sự suy thoái của con người do nạn bần cùng, sự hư hỏng của phụ nữ do nạn đói, trẻ em bị tàn tật do thiếu ánh sáng – vẫn chưa được giải quyết; chừng nào tình trạng ngạt thở xã hội còn có thể xảy ra ở bất kỳ nơi nào trên thế giới;—nói cách khác, và với ý nghĩa rộng hơn nữa, chừng nào sự ngu dốt và nghèo đói còn tồn tại trên trái đất, những cuốn sách về bản chất của Những người khốn khổ không thể không được sử dụng.\n\nNăm 1815, M. …",
+      "subjectsVi": [
+        "Tiểu thuyết lịch sử",
+        "Trẻ mồ côi -- Tiểu thuyết",
+        "Paris (Pháp) -- Tiểu thuyết",
+        "Văn học sử thi"
+      ],
+      "translated": true
+    },
+    {
+      "id": "28054",
+      "source": "gutenberg",
+      "sourceUrl": "https://www.gutenberg.org/ebooks/28054",
+      "title": "The Brothers Karamazov",
+      "authors": [
+        {
+          "name": "Dostoyevsky, Fyodor",
+          "birth": 1821,
+          "death": 1881
+        }
+      ],
+      "subjects": [
+        "Didactic fiction",
+        "Fathers and sons -- Fiction",
+        "Russia -- Social life and customs -- 1533-1917 -- Fiction",
+        "Brothers -- Fiction"
+      ],
+      "categories": [
+        "classics"
+      ],
+      "coverUrl": "https://www.gutenberg.org/cache/epub/28054/pg28054.cover.medium.jpg",
+      "textUrl": "https://www.gutenberg.org/cache/epub/28054/pg28054.txt",
+      "preface": "Alexey Fyodorovitch Karamazov was the third son of Fyodor Pavlovitch Karamazov, a land owner well known in our district in his own day, and still remembered among us owing to his gloomy and tragic death, which happened thirteen years ago, and which I shall describe in its proper place. For the present I will only say that this “landowner”—for so we used to call him, although he hardly spent a day of his life on his own estate—was a strange type, yet one pretty frequently to be met with, a type abject and vicious and at the same time senseless. But he was one of those senseless persons who are very well capable of looking after their worldly affairs, and, apparently, after nothing else. Fyodor Pavlovitch, for instance, began with next to nothing; his estate was of the smallest; he ran to dine at other men’s tables, and fastened on them as a toady, yet at his death it appeared that he had a hundred thousand roubles in hard cash. At the same time, he was all his life one of the most senseless, fantastical fellows in the whole district. …",
+      "prefaceLabel": "Chapter I",
+      "words": 350685,
+      "addedAt": 1793611644783,
+      "titleVi": "Anh em nhà Karamazov",
+      "prefaceVi": "Alexey Fyodorovitch Karamazov là con trai thứ ba của Fyodor Pavlovich Karamazov, một chủ đất nổi tiếng ở quận chúng tôi vào thời của ông, và vẫn còn được chúng tôi nhớ đến vì cái chết u ám và bi thảm của ông, xảy ra cách đây mười ba năm, và tôi sẽ mô tả ở đúng chỗ. Hiện tại tôi chỉ nói rằng “địa chủ” này - vì chúng tôi thường gọi ông ta như vậy, mặc dù ông ta hầu như không dành một ngày nào trong đời cho mảnh đất riêng của mình - là một loại người kỳ lạ, nhưng lại khá thường xuyên gặp phải, một loại người hèn hạ, hung ác và đồng thời vô tri. Nhưng anh ta là một trong những người vô tri, rất có khả năng lo liệu các công việc trần thế của họ, và dường như không theo đuổi điều gì khác. Chẳng hạn, Fyodor Pavlovich bắt đầu từ con số không; tài sản của ông là nhỏ nhất; anh ta chạy đến dùng bữa tại bàn của những người đàn ông khác và bám chặt lấy họ như một kẻ ăn bám, nhưng khi chết, dường như anh ta có một trăm nghìn rúp tiền mặt. Đồng thời, cả đời anh ta là một trong những kẻ vô nghĩa, viển vông nhất trong toàn huyện. …",
+      "subjectsVi": [
+        "Tiểu thuyết giáo khoa",
+        "Cha và con -- Tiểu thuyết",
+        "Nga -- Đời sống xã hội và phong tục -- 1533-1917 -- Tiểu thuyết",
+        "Anh em -- Tiểu thuyết"
+      ],
+      "translated": true
+    },
+    {
+      "id": "1232",
+      "source": "gutenberg",
+      "sourceUrl": "https://www.gutenberg.org/ebooks/1232",
+      "title": "The Prince",
+      "authors": [
+        {
+          "name": "Machiavelli, Niccolò",
+          "birth": 1469,
+          "death": 1527
+        }
+      ],
+      "subjects": [
+        "State, The -- Early works to 1800",
+        "Political science -- Philosophy -- Early works to 1800",
+        "Political ethics -- Early works to 1800"
+      ],
+      "categories": [
+        "philosophy",
+        "history"
+      ],
+      "coverUrl": "https://www.gutenberg.org/cache/epub/1232/pg1232.cover.medium.jpg",
+      "textUrl": "https://www.gutenberg.org/cache/epub/1232/pg1232.txt",
+      "preface": "THE PRINCE CHAPTER I. HOW MANY KINDS OF PRINCIPALITIES THERE ARE, AND BY WHAT MEANS THEY ARE ACQUIRED CHAPTER II. CONCERNING HEREDITARY PRINCIPALITIES CHAPTER III. CONCERNING MIXED PRINCIPALITIES CHAPTER IV. WHY THE KINGDOM OF DARIUS, CONQUERED BY ALEXANDER, DID NOT REBEL AGAINST THE SUCCESSORS OF ALEXANDER AT HIS DEATH CHAPTER V. CONCERNING THE WAY TO GOVERN CITIES OR PRINCIPALITIES WHICH LIVED UNDER THEIR OWN LAWS BEFORE THEY WERE ANNEXED CHAPTER VI. CONCERNING NEW PRINCIPALITIES WHICH ARE ACQUIRED BY ONE’S OWN ARMS AND ABILITY CHAPTER VII. CONCERNING NEW PRINCIPALITIES WHICH ARE ACQUIRED EITHER BY THE ARMS OF OTHERS OR BY GOOD FORTUNE CHAPTER VIII. CONCERNING THOSE WHO HAVE OBTAINED A PRINCIPALITY BY WICKEDNESS CHAPTER IX. CONCERNING A CIVIL PRINCIPALITY CHAPTER X. CONCERNING THE WAY IN WHICH THE STRENGTH OF ALL PRINCIPALITIES OUGHT TO BE MEASURED CHAPTER XI. CONCERNING ECCLESIASTICAL PRINCIPALITIES CHAPTER XII. HOW MANY KINDS OF SOLDIERY THERE ARE AND CONCERNING MERCENARIES CHAPTER XIII. CONCERNING AUXILIARIES, MIXED SOLDIERY, AND ONE’S OWN CHAPTER XIV. …",
+      "prefaceLabel": "Introduction",
+      "words": 49943,
+      "addedAt": 1793611644783,
+      "titleVi": "Hoàng tử",
+      "prefaceVi": "HOÀNG TỬ CHƯƠNG I. CÓ NHIỀU LOẠI NGUYÊN TẮC VÀ BẰNG PHƯƠNG PHÁP NÀO ĐẠT ĐƯỢC CHƯƠNG II. VỀ NGUYÊN TẮC DI TRUYỀN CHƯƠNG III. VỀ NGUYÊN TẮC HỖN HỢP CHƯƠNG IV. TẠI SAO VƯƠNG QUỐC CỦA DARIO, BỊ ALEXANDER CHINH PHỤC, KHÔNG NỔI LẬP CHỐNG LẠI NHỮNG NGƯỜI KẾ TIẾP CỦA ALEXANDER KHI CHẾT CHƯƠNG V. LIÊN QUAN ĐẾN CÁCH QUẢN LÝ THÀNH PHỐ HOẶC CÁC NGUYÊN TẮC SỐNG THEO LUẬT CỦA MÌNH TRƯỚC KHI ĐƯỢC BỔ SUNG CHƯƠNG VI. LIÊN QUAN ĐẾN CÁC NGUYÊN TẮC MỚI MÀ SỞ HỮU VŨ KHÍ VÀ NĂNG LỰC CỦA MÌNH CHƯƠNG VII. LIÊN QUAN ĐẾN CÁC NGUYÊN TẮC MỚI ĐƯỢC CÓ ĐƯỢC BỞI VÒNG TAY CỦA NGƯỜI KHÁC HOẶC BỞI VẬN TẢI CHƯƠNG VIII. LIÊN QUAN ĐẾN NHỮNG NGƯỜI ĐƯỢC QUYỀN NGUYÊN TẮC BỞI SỰ TỘI ÁC CHƯƠNG IX. LIÊN QUAN ĐẾN NGUYÊN TẮC DÂN SỰ CHƯƠNG X. LIÊN QUAN ĐẾN CÁCH ĐÁNH GIÁ SỨC MẠNH CỦA TẤT CẢ CÁC NGUYÊN TẮC NÊN ĐƯỢC ĐÁNH GIÁ CHƯƠNG XI. VỀ CÁC NGUYÊN TẮC GIÁO HỘI CHƯƠNG XII. CÓ NHIỀU LOẠI LÍNH VÀ LIÊN QUAN ĐẾN LÊN LÍNH CHƯƠNG XIII. LIÊN QUAN ĐẾN QUÝ VỊ PHỤ, LÍNH HỖN HỢP VÀ CHƯƠNG XIV CỦA RIÊNG MÌNH. …",
+      "subjectsVi": [
+        "Bang, The -- Hoạt động sớm đến năm 1800",
+        "Khoa học chính trị -- Triết học -- Những công trình đầu tiên đến năm 1800",
+        "Đạo đức chính trị -- Những công trình đầu tiên đến năm 1800"
+      ],
+      "translated": true
+    },
+    {
+      "id": "132",
+      "source": "gutenberg",
+      "sourceUrl": "https://www.gutenberg.org/ebooks/132",
+      "title": "The Art of War",
+      "authors": [
+        {
+          "name": "Sunzi",
+          "birth": null,
+          "death": null
+        }
+      ],
+      "subjects": [
+        "Military art and science -- Early works to 1800",
+        "War -- Early works to 1800"
+      ],
+      "categories": [
+        "philosophy",
+        "history"
+      ],
+      "coverUrl": "https://www.gutenberg.org/cache/epub/132/pg132.cover.medium.jpg",
+      "textUrl": "https://www.gutenberg.org/cache/epub/132/pg132.txt",
+      "preface": "When Lionel Giles began his translation of Sun Tzŭ’s Art of War, the work was virtually unknown in Europe. Its introduction to Europe began in 1782 when a French Jesuit Father living in China, Joseph Amiot, acquired a copy of it, and translated it into French. It was not a good translation because, according to Dr. Giles, \"[I]t contains a great deal that Sun Tzŭ did not write, and very little indeed of what he did.\"\n\nThe first translation into English was published in 1905 in Tokyo by Capt. E. F. Calthrop, R.F.A. However, this translation is, in the words of Dr. Giles, \"excessively bad.\" He goes further in this criticism: \"It is not merely a question of downright blunders, from which none can hope to be wholly exempt. Omissions were frequent; hard passages were willfully distorted or slurred over. Such offenses are less pardonable. They would not be tolerated in any edition of a Latin or Greek classic, and a similar standard of honesty ought to be insisted upon in translations from Chinese.\" In 1908 a new edition of Capt. Calthrop’s translation was published in London. …",
+      "prefaceLabel": "Introduction",
+      "words": 55121,
+      "addedAt": 1793611644783,
+      "titleVi": "Nghệ thuật chiến tranh",
+      "prefaceVi": "Khi Lionel Giles bắt đầu dịch Binh pháp của Tôn Tử, tác phẩm này hầu như không được biết đến ở châu Âu. Sự giới thiệu của nó đến châu Âu bắt đầu vào năm 1782 khi một linh mục Dòng Tên người Pháp sống ở Trung Quốc, Joseph Amiot, mua được một bản sao của nó và dịch nó sang tiếng Pháp. Đó không phải là một bản dịch hay bởi vì, theo Tiến sĩ Giles, \"[tôi] không chứa đựng nhiều điều mà Tôn Tử đã không viết, và thực sự rất ít về những gì ông ấy đã làm.\"\n\nBản dịch đầu tiên sang tiếng Anh được xuất bản năm 1905 tại Tokyo bởi Đại úy E. F. Calthrop, R.F.A. Tuy nhiên, bản dịch này, theo lời của Tiến sĩ Giles, là “cực kỳ tệ”. Ông đi xa hơn trong lời chỉ trích này: \"Đây không chỉ đơn thuần là vấn đề về những sai lầm ngớ ngẩn mà không ai có thể hy vọng được miễn trừ hoàn toàn. Việc bỏ sót xảy ra thường xuyên; các đoạn khó bị cố ý bóp méo hoặc nói lắp. Những hành vi phạm tội như vậy khó được tha thứ hơn. Chúng sẽ không được dung thứ trong bất kỳ ấn bản nào của một tác phẩm cổ điển bằng tiếng Latinh hoặc tiếng Hy Lạp, và tiêu chuẩn trung thực tương tự phải được yêu cầu trong các bản dịch từ tiếng Trung Quốc.\" Năm 1908, bản dịch mới của Đại úy Calthrop được xuất bản ở London. …",
+      "subjectsVi": [
+        "Nghệ thuật và khoa học quân sự -- Những tác phẩm đầu tiên đến năm 1800",
+        "Chiến tranh -- Tác phẩm đầu tiên đến năm 1800"
+      ],
+      "translated": true
+    },
+    {
+      "id": "834",
+      "source": "gutenberg",
+      "sourceUrl": "https://www.gutenberg.org/ebooks/834",
+      "title": "The Memoirs of Sherlock Holmes",
+      "authors": [
+        {
+          "name": "Doyle, Arthur Conan",
+          "birth": 1859,
+          "death": 1930
+        }
+      ],
+      "subjects": [
+        "Holmes, Sherlock (Fictitious character) -- Fiction",
+        "Private investigators -- England -- Fiction",
+        "Detective and mystery stories, English"
+      ],
+      "categories": [
+        "mystery"
+      ],
+      "coverUrl": "https://www.gutenberg.org/cache/epub/834/pg834.cover.medium.jpg",
+      "textUrl": "https://www.gutenberg.org/cache/epub/834/pg834.txt",
+      "preface": "I was not surprised. Indeed, my only wonder was that he had not already been mixed up in this extraordinary case, which was the one topic of conversation through the length and breadth of England. For a whole day my companion had rambled about the room with his chin upon his chest and his brows knitted, charging and recharging his pipe with the strongest black tobacco, and absolutely deaf to any of my questions or remarks. Fresh editions of every paper had been sent up by our news agent, only to be glanced over and tossed down into a corner. Yet, silent as he was, I knew perfectly well what it was over which he was brooding. There was but one problem before the public which could challenge his powers of analysis, and that was the singular disappearance of the favourite for the Wessex Cup, and the tragic murder of its trainer. When, therefore, he suddenly announced his intention of setting out for the scene of the drama it was only what I had both expected and hoped for.",
+      "prefaceLabel": "Opening",
+      "words": 95486,
+      "addedAt": 1793611644783,
+      "titleVi": "Hồi ký của Sherlock Holmes",
+      "prefaceVi": "Tôi không ngạc nhiên. Quả thực, điều thắc mắc duy nhất của tôi là anh ta vẫn chưa bị vướng vào vụ án đặc biệt này, vốn là chủ đề được bàn tán khắp nước Anh. Trong suốt một ngày, người bạn đồng hành của tôi đã lảng vảng quanh phòng, cằm tựa vào ngực và nhíu mày, nạp đi nạp lại tẩu thuốc của mình bằng loại thuốc lá đen mạnh nhất và hoàn toàn không nghe thấy bất kỳ câu hỏi hoặc nhận xét nào của tôi. Các ấn bản mới của mọi tờ báo đều được đại lý tin tức của chúng tôi gửi đến, chỉ để liếc qua và ném vào một góc. Tuy nhiên, mặc dù anh ấy im lặng nhưng tôi biết rất rõ anh ấy đang nghiền ngẫm điều gì. Chỉ có một vấn đề trước công chúng có thể thách thức khả năng phân tích của anh ta, đó là sự biến mất kỳ lạ của đội bóng được yêu thích tại Wessex Cup và vụ sát hại bi thảm người huấn luyện nó. Vì vậy, khi anh ấy bất ngờ tuyên bố ý định đến hiện trường của vở kịch thì đó chỉ là điều tôi vừa mong đợi vừa hy vọng.",
+      "subjectsVi": [
+        "Holmes, Sherlock (Nhân vật hư cấu) -- Tiểu thuyết",
+        "Điều tra viên tư nhân -- Anh -- Tiểu thuyết",
+        "Truyện trinh thám và bí ẩn, tiếng Anh"
+      ],
+      "translated": true
+    },
+    {
+      "id": "42",
+      "source": "gutenberg",
+      "sourceUrl": "https://www.gutenberg.org/ebooks/42",
+      "title": "The strange case of Dr. Jekyll and Mr. Hyde",
+      "authors": [
+        {
+          "name": "Stevenson, Robert Louis",
+          "birth": 1850,
+          "death": 1894
+        }
+      ],
+      "subjects": [
+        "Science fiction",
+        "Horror tales",
+        "London (England) -- Fiction",
+        "Physicians -- Fiction"
+      ],
+      "categories": [
+        "classics",
+        "mystery"
+      ],
+      "coverUrl": "https://www.gutenberg.org/cache/epub/42/pg42.cover.medium.jpg",
+      "textUrl": "https://www.gutenberg.org/cache/epub/42/pg42.txt",
+      "preface": "It’s ill to loose the bands that God decreed to bind; Still will we be the children of the heather and the wind. Far away from home, O it’s still for you and me That the broom is blowing bonnie in the north countrie.\n\nMr. Utterson the lawyer was a man of a rugged countenance, that was never lighted by a smile; cold, scanty and embarrassed in discourse; backward in sentiment; lean, long, dusty, dreary, and yet somehow lovable. At friendly meetings, and when the wine was to his taste, something eminently human beaconed from his eye; something indeed which never found its way into his talk, but which spoke not only in these silent symbols of the after-dinner face, but more often and loudly in the acts of his life. He was austere with himself; drank gin when he was alone, to mortify a taste for vintages; and though he enjoyed the theatre, had not crossed the doors of one for twenty years. …",
+      "prefaceLabel": "Opening",
+      "words": 25685,
+      "addedAt": 1793611644783,
+      "titleVi": "Vụ án kỳ lạ của bác sĩ Jekyll và ông Hyde",
+      "prefaceVi": "Thật là xấu xa khi tháo những sợi dây mà Đức Chúa Trời đã ra lệnh ràng buộc; Chúng ta vẫn sẽ là con của thạch nam và gió. Xa nhà, ôi vẫn còn anh và em Cây chổi thổi bonnie miền bắc.\n\nÔng luật sư Utterson là một người có vẻ mặt thô kệch, không bao giờ nở một nụ cười; lạnh lùng, ít nói và ngượng ngùng khi nói chuyện; lạc hậu trong tình cảm; gầy, dài, bụi bặm, ảm đạm, nhưng vẫn đáng yêu bằng cách nào đó. Trong những cuộc gặp gỡ thân thiện, và khi rượu vừa hợp khẩu vị của anh ấy, một điều gì đó rất con người hiện lên trong mắt anh ấy; thực sự có điều gì đó chưa bao giờ xuất hiện trong cuộc nói chuyện của anh ấy, nhưng nó không chỉ nói lên những biểu tượng thầm lặng trên gương mặt sau bữa tối mà còn thường xuyên và ồn ào hơn trong những hành động trong cuộc đời anh ấy. Anh ấy khắc khổ với chính mình; uống rượu gin khi ở một mình, để giảm bớt sở thích thưởng thức rượu nho; và mặc dù ông rất thích xem kịch nhưng đã không bước qua cánh cửa của một nhà hát nào trong suốt hai mươi năm. …",
+      "subjectsVi": [
+        "khoa học viễn tưởng",
+        "Truyện kinh dị",
+        "Luân Đôn (Anh) -- Tiểu thuyết",
+        "Bác sĩ -- Tiểu thuyết"
+      ],
+      "translated": true
+    },
+    {
+      "id": "18857",
+      "source": "gutenberg",
+      "sourceUrl": "https://www.gutenberg.org/ebooks/18857",
+      "title": "A Journey to the Centre of the Earth",
+      "authors": [
+        {
+          "name": "Verne, Jules",
+          "birth": 1828,
+          "death": 1905
+        }
+      ],
+      "subjects": [
+        "Science fiction",
+        "Adventure stories",
+        "Earth (Planet) -- Core -- Fiction",
+        "Voyages, Imaginary -- Fiction"
+      ],
+      "categories": [
+        "classics",
+        "scifi"
+      ],
+      "coverUrl": "https://www.gutenberg.org/cache/epub/18857/pg18857.cover.medium.jpg",
+      "textUrl": "https://www.gutenberg.org/cache/epub/18857/pg18857.txt",
+      "preface": "Looking back to all that has occurred to me since that eventful day, I am scarcely able to believe in the reality of my adventures. They were truly so wonderful that even now I am bewildered when I think of them.\n\nMy uncle was a German, having married my mother's sister, an Englishwoman. Being very much attached to his fatherless nephew, he invited me to study under him in his home in the fatherland. This home was in a large town, and my uncle a professor of philosophy, chemistry, geology, mineralogy, and many other ologies.\n\nOne day, after passing some hours in the laboratory--my uncle being absent at the time--I suddenly felt the necessity of renovating the tissues--<i>i.e.</i>, I was hungry, and was about to rouse up our old French cook, when my uncle, Professor Von Hardwigg, suddenly opened the street door, and came rushing upstairs.\n\nNow Professor Hardwigg, my worthy uncle, is by no means a bad sort of man; he is, however, choleric and original. …",
+      "prefaceLabel": "Chapter I",
+      "words": 85819,
+      "addedAt": 1793611644783,
+      "titleVi": "Hành trình đến tâm Trái đất",
+      "prefaceVi": "Nhìn lại tất cả những gì đã xảy ra với tôi kể từ ngày đầy sự kiện đó, tôi khó có thể tin vào sự thật về cuộc phiêu lưu của mình. Chúng thực sự tuyệt vời đến nỗi đến bây giờ tôi vẫn thấy hoang mang khi nghĩ đến chúng.\n\nChú tôi là người Đức, lấy chị gái của mẹ tôi, một phụ nữ Anh. Rất gắn bó với đứa cháu mồ côi cha, ông đã mời tôi theo học tại quê hương của ông. Ngôi nhà này ở trong một thị trấn lớn, và chú tôi là giáo sư triết học, hóa học, địa chất, khoáng vật học và nhiều ngành khoa học khác.\n\nMột ngày nọ, sau khi dành vài giờ trong phòng thí nghiệm—lúc đó chú tôi vắng mặt—tôi đột nhiên cảm thấy cần phải sửa lại khăn giấy—<i>tức là</i>, tôi đói và đang định đánh thức người đầu bếp già người Pháp của chúng tôi thì chú tôi, Giáo sư Von Hardwigg, đột nhiên mở cửa phố và lao lên lầu.\n\nGiáo sư Hardwigg, người chú đáng kính của tôi, không hề là một người xấu; Tuy nhiên, anh ấy là người nóng tính và độc đáo. …",
+      "subjectsVi": [
+        "khoa học viễn tưởng",
+        "Truyện phiêu lưu",
+        "Trái đất (Hành tinh) -- Cốt lõi -- Tiểu thuyết",
+        "Những chuyến du hành, tưởng tượng -- Tiểu thuyết"
+      ],
+      "translated": true
+    },
+    {
+      "id": "32",
+      "source": "gutenberg",
+      "sourceUrl": "https://www.gutenberg.org/ebooks/32",
+      "title": "Herland",
+      "authors": [
+        {
+          "name": "Gilman, Charlotte Perkins",
+          "birth": 1860,
+          "death": 1935
+        }
+      ],
+      "subjects": [
+        "Utopias -- Fiction",
+        "Women -- Fiction",
+        "Utopian fiction",
+        "Black humor"
+      ],
+      "categories": [
+        "scifi"
+      ],
+      "coverUrl": "https://www.gutenberg.org/cache/epub/32/pg32.cover.medium.jpg",
+      "textUrl": "https://www.gutenberg.org/cache/epub/32/pg32.txt",
+      "preface": "This is written from memory, unfortunately. If I could have brought with me the material I so carefully prepared, this would be a very different story. Whole books full of notes, carefully copied records, firsthand descriptions, and the pictures--that’s the worst loss. We had some bird’s-eyes of the cities and parks; a lot of lovely views of streets, of buildings, outside and in, and some of those gorgeous gardens, and, most important of all, of the women themselves.\n\nNobody will ever believe how they looked. Descriptions aren’t any good when it comes to women, and I never was good at descriptions anyhow. But it’s got to be done somehow; the rest of the world needs to know about that country.\n\nI haven’t said where it was for fear some self-appointed missionaries, or traders, or land-greedy expansionists, will take it upon themselves to push in. They will not be wanted, I can tell them that, and will fare worse than we did if they do find it.",
+      "prefaceLabel": "Chapter I",
+      "words": 52158,
+      "addedAt": 1793611644783,
+      "titleVi": "Herland",
+      "prefaceVi": "Thật không may, điều này được viết từ bộ nhớ. Nếu tôi có thể mang theo tài liệu mà tôi đã chuẩn bị kỹ càng thì đây sẽ là một câu chuyện rất khác. Toàn bộ cuốn sách đầy ghi chú, hồ sơ được sao chép cẩn thận, mô tả trực tiếp và hình ảnh - đó là sự mất mát tồi tệ nhất. Chúng tôi đã có một số cái nhìn toàn cảnh về các thành phố và công viên; rất nhiều khung cảnh đáng yêu về đường phố, các tòa nhà, bên ngoài và bên trong, và một số khu vườn tuyệt đẹp đó, và quan trọng nhất là của chính những người phụ nữ.\n\nSẽ không ai tin được họ trông như thế nào. Mô tả không có tác dụng gì khi nói đến phụ nữ, và dù sao thì tôi cũng chưa bao giờ giỏi mô tả. Nhưng nó phải được thực hiện bằng cách nào đó; phần còn lại của thế giới cần biết về đất nước đó.\n\nTôi chưa nói nó ở đâu vì sợ một số nhà truyền giáo, thương nhân, hoặc những kẻ bành trướng tham lam đất đai tự bổ nhiệm sẽ tự mình xông vào. Họ sẽ không bị truy nã, tôi có thể nói với họ điều đó, và sẽ còn tệ hơn chúng ta nếu họ tìm thấy nó.",
+      "subjectsVi": [
+        "Không tưởng -- Tiểu thuyết",
+        "Phụ nữ -- Tiểu thuyết",
+        "Tiểu thuyết không tưởng",
+        "Hài hước đen"
+      ],
+      "translated": true
+    },
+    {
+      "id": "74",
+      "source": "gutenberg",
+      "sourceUrl": "https://www.gutenberg.org/ebooks/74",
+      "title": "The Adventures of Tom Sawyer, Complete",
+      "authors": [
+        {
+          "name": "Twain, Mark",
+          "birth": 1835,
+          "death": 1910
+        }
+      ],
+      "subjects": [
+        "Humorous stories",
+        "Bildungsromans",
+        "Boys -- Fiction",
+        "Male friendship -- Fiction"
+      ],
+      "categories": [
+        "classics",
+        "children"
+      ],
+      "coverUrl": "https://www.gutenberg.org/cache/epub/74/pg74.cover.medium.jpg",
+      "textUrl": "https://www.gutenberg.org/cache/epub/74/pg74.txt",
+      "preface": "Most of the adventures recorded in this book really occurred; one or two were experiences of my own, the rest those of boys who were schoolmates of mine. Huck Finn is drawn from life; Tom Sawyer also, but not from an individual—he is a combination of the characteristics of three boys whom I knew, and therefore belongs to the composite order of architecture.\n\nThe odd superstitions touched upon were all prevalent among children and slaves in the West at the period of this story—that is to say, thirty or forty years ago.\n\nAlthough my book is intended mainly for the entertainment of boys and girls, I hope it will not be shunned by men and women on that account, for part of my plan has been to try to pleasantly remind adults of what they once were themselves, and of how they felt and thought and talked, and what queer enterprises they sometimes engaged in.\n\nThe old lady pulled her spectacles down and looked over them about the room; then she put them up and looked out under them. …",
+      "prefaceLabel": "Preface",
+      "words": 70800,
+      "addedAt": 1793611644783,
+      "titleVi": "Những cuộc phiêu lưu của Tom Sawyer, trọn bộ",
+      "prefaceVi": "Hầu hết những cuộc phiêu lưu được ghi lại trong cuốn sách này đều có thật; một hoặc hai là kinh nghiệm của riêng tôi, số còn lại là của những cậu bạn học cùng trường với tôi. Huck Finn được rút ra từ cuộc sống; Tom Sawyer cũng vậy, nhưng không phải từ một cá nhân - anh ấy là sự kết hợp những đặc điểm của ba chàng trai mà tôi biết, và do đó thuộc về trật tự tổng hợp của kiến ​​trúc.\n\nNhững điều mê tín kỳ lạ được đề cập đến đều phổ biến ở trẻ em và nô lệ ở phương Tây vào thời kỳ của câu chuyện này - nghĩa là cách đây ba mươi hoặc bốn mươi năm.\n\nMặc dù cuốn sách của tôi chủ yếu nhằm mục đích giải trí cho các bé trai và bé gái, nhưng tôi hy vọng nó sẽ không bị đàn ông và phụ nữ xa lánh vì lý do đó, vì một phần kế hoạch của tôi là cố gắng nhắc nhở một cách hài hước những gì họ từng là chính họ, về cách họ cảm nhận, suy nghĩ và nói chuyện cũng như những công việc kỳ lạ mà đôi khi họ tham gia.\n\nBà già kéo kính xuống và nhìn quanh phòng; sau đó cô đặt chúng lên và nhìn ra phía dưới. …",
+      "subjectsVi": [
+        "Những câu chuyện hài hước",
+        "Bildungsroman",
+        "Con trai -- Tiểu thuyết",
+        "Tình bạn nam giới -- Tiểu thuyết"
+      ],
+      "translated": true
+    },
+    {
+      "id": "28",
+      "source": "gutenberg",
+      "sourceUrl": "https://www.gutenberg.org/ebooks/28",
+      "title": "The Fables of Aesop: Selected, Told Anew, and Their History Traced",
+      "authors": [
+        {
+          "name": "Aesop",
+          "birth": 621,
+          "death": 565
+        }
+      ],
+      "subjects": [
+        "Aesop's fables -- Adaptations",
+        "Fables, Greek -- Adaptations"
+      ],
+      "categories": [
+        "classics",
+        "children"
+      ],
+      "coverUrl": "https://www.gutenberg.org/cache/epub/28/pg28.cover.medium.jpg",
+      "textUrl": "https://www.gutenberg.org/cache/epub/28/pg28.txt",
+      "preface": "It is difficult to say what are and what are not the Fables of Æsop. Almost all the fables that have appeared in the Western world have been sheltered at one time or another under the shadow of that name. I could at any rate enumerate at least seven hundred which have appeared in English in various books entitled Æsop’s Fables. L’Estrange’s collection alone contains over five hundred. In the struggle for existence among all these a certain number stand out as being the most effective and the most familiar. I have attempted to bring most of these into the following pages.\n\nThere is no fixed text even for the nucleus collection contained in this book. Æsop himself is so shadowy a figure that we might almost be forgiven if we held, with regard to him, the heresy of Mistress Elizabeth Prig. What we call his fables can in most cases be traced back to the fables of other people, notably of Phædrus and Babrius. …",
+      "prefaceLabel": "Preface",
+      "words": 14854,
+      "addedAt": 1793611644783,
+      "titleVi": "Truyện ngụ ngôn của Aesop: Được chọn lọc, kể lại và truy tìm lịch sử của họ",
+      "prefaceVi": "Thật khó để nói đâu là Truyện ngụ ngôn của Æsop. Hầu như tất cả các truyện ngụ ngôn xuất hiện ở thế giới phương Tây lúc này hay lúc khác đều được che chở dưới cái bóng của cái tên đó. Dù sao đi nữa, tôi có thể liệt kê ít nhất bảy trăm tác phẩm đã xuất hiện bằng tiếng Anh trong nhiều cuốn sách khác nhau có tựa đề Truyện ngụ ngôn của Æsop. Chỉ riêng bộ sưu tập của L'Estrange đã có hơn năm trăm chiếc. Trong cuộc đấu tranh sinh tồn giữa tất cả những người này, một số nhất định nổi bật lên như những người hiệu quả nhất và quen thuộc nhất. Tôi đã cố gắng đưa hầu hết những điều này vào các trang sau.\n\nKhông có văn bản cố định ngay cả đối với bộ sưu tập hạt nhân có trong cuốn sách này. Bản thân Æsop là một nhân vật mờ ám đến mức chúng ta gần như có thể được tha thứ nếu chúng ta coi anh ta là tà giáo của Bà chủ Elizabeth Prig. Trong hầu hết các trường hợp, cái mà chúng ta gọi là truyện ngụ ngôn của anh ấy có thể bắt nguồn từ truyện ngụ ngôn của những người khác, đặc biệt là của Phædrus và Babrius. …",
+      "subjectsVi": [
+        "Truyện ngụ ngôn Aesop -- Chuyển thể",
+        "Truyện ngụ ngôn Hy Lạp -- Chuyển thể"
+      ],
+      "translated": true
+    },
+    {
+      "id": "19",
+      "source": "gutenberg",
+      "sourceUrl": "https://www.gutenberg.org/ebooks/19",
+      "title": "The Song of Hiawatha",
+      "authors": [
+        {
+          "name": "Longfellow, Henry Wadsworth",
+          "birth": 1807,
+          "death": 1882
+        }
+      ],
+      "subjects": [
+        "Indians of North America -- Poetry",
+        "Hiawatha, active 15th century -- Poetry",
+        "Iroquois Indians -- Kings and rulers -- Poetry"
+      ],
+      "categories": [
+        "poetry"
+      ],
+      "coverUrl": "https://www.gutenberg.org/cache/epub/19/pg19.cover.medium.jpg",
+      "textUrl": "https://www.gutenberg.org/cache/epub/19/pg19.txt",
+      "preface": "The Song of Hiawatha is based on the legends and stories of many North American Indian tribes, but especially those of the Ojibway Indians of northern Michigan, Wisconsin, and Minnesota. They were collected by Henry Rowe Schoolcraft, the reknowned historian, pioneer explorer, and geologist. He was superintendent of Indian affairs for Michigan from 1836 to 1841.\n\nSchoolcraft married Jane, O-bah-bahm-wawa-ge-zhe-go-qua (The Woman of the Sound Which the Stars Make Rushing Through the Sky), Johnston. Jane was a daughter of John Johnston, an early Irish fur trader, and O-shau-gus-coday-way-qua (The Woman of the Green Prairie), who was a daughter of Waub-o-jeeg (The White Fisher), who was Chief of the Ojibway tribe at La Pointe, Wisconsin.\n\nJane and her mother are credited with having researched, authenticated, and compiled much of the material Schoolcraft included in his Algic Researches (1839) and a revision published in 1856 as The Myth of Hiawatha. It was this latter revision that Longfellow used as the basis for The Song of Hiawatha.",
+      "prefaceLabel": "Introduction",
+      "words": 32135,
+      "addedAt": 1793611644783,
+      "titleVi": "Bài hát của Hiawatha",
+      "prefaceVi": "Bài hát của Hiawatha dựa trên truyền thuyết và câu chuyện của nhiều bộ lạc người da đỏ ở Bắc Mỹ, nhưng đặc biệt là của người da đỏ Ojibway ở phía bắc Michigan, Wisconsin và Minnesota. Chúng được thu thập bởi Henry Rowe Schoolcraft, nhà sử học nổi tiếng, nhà thám hiểm tiên phong và nhà địa chất. Ông là giám đốc phụ trách các vấn đề về người da đỏ ở Michigan từ năm 1836 đến năm 1841.\n\nSchoolcraft kết hôn với Jane, O-bah-bahm-wawa-ge-zhe-go-qua (Người phụ nữ của âm thanh mà các vì sao tạo ra lao vút qua bầu trời), Johnston. Jane là con gái của John Johnston, một nhà buôn lông thú người Ireland thời kỳ đầu, và O-shau-gus-coday-way-qua (Người phụ nữ của thảo nguyên xanh), là con gái của Waub-o-jeeg (The White Fisher), người đứng đầu bộ tộc Ojibway tại La Pointe, Wisconsin.\n\nJane và mẹ cô được ghi nhận là đã nghiên cứu, xác thực và biên soạn phần lớn tài liệu Schoolcraft có trong Algic Researches (1839) của ông và một bản sửa đổi xuất bản năm 1856 với tựa đề Huyền thoại về Hiawatha. Chính bản sửa đổi sau này đã được Longfellow sử dụng làm nền tảng cho The Song of Hiawatha.",
+      "subjectsVi": [
+        "Người da đỏ Bắc Mỹ -- Thơ",
+        "Hiawatha, thế kỷ 15 tích cực -- Thơ",
+        "Người da đỏ Iroquois -- Các vị vua và những người cai trị -- Thơ"
+      ],
+      "translated": true
+    },
+    {
+      "id": "se~pauline-e-hopkins~of-one-blood",
+      "source": "standardebooks",
+      "sourceUrl": "https://standardebooks.org/ebooks/pauline-e-hopkins/of-one-blood",
+      "title": "Of One Blood",
+      "authors": [
+        {
+          "name": "Hopkins, Pauline E.",
+          "birth": null,
+          "death": null
+        }
+      ],
+      "subjects": [
+        "Paranormal fiction",
+        "Ethiopia -- Fiction",
+        "African American medical students -- Fiction",
+        "Black people -- Race identity -- Fiction"
+      ],
+      "categories": [
+        "self",
+        "scifi"
+      ],
+      "coverUrl": "https://standardebooks.org/ebooks/pauline-e-hopkins/of-one-blood/downloads/cover-thumbnail.jpg",
+      "textUrl": "https://standardebooks.org/ebooks/pauline-e-hopkins/of-one-blood/text/single-page",
+      "preface": "The recitations were over for the day. It was the first week in November and it had rained about every day the entire week; now freezing temperature added to the discomforture of the dismal season. The lingering equinoctial whirled the last clinging yellow leaves from the trees on the campus and strewed them over the deserted paths, while from the leaden sky fluttering snow-white flakes gave an unexpected touch of winter to the scene.\n\nThe east wind for which Boston and vicinity is celebrated, drove the sleet against the window panes of the room in which Reuel Briggs sat among his books and the apparatus for experiments. The room served for both living and sleeping. Briggs could have told you that the bareness and desolateness of the apartment were like his life, but he was a reticent man who knew how to suffer in silence. …",
+      "prefaceLabel": "Opening",
+      "words": 52543,
+      "addedAt": 1793611644783,
+      "titleVi": "Của Một Dòng Máu",
+      "prefaceVi": "Buổi tụng kinh trong ngày đã kết thúc. Đó là tuần đầu tiên của tháng 11 và suốt tuần trời hầu như ngày nào cũng mưa; bây giờ nhiệt độ đóng băng càng làm tăng thêm sự khó chịu của mùa ảm đạm. Điểm phân kéo dài cuốn những chiếc lá vàng cuối cùng còn sót lại trên cây trong khuôn viên và rải chúng trên những con đường vắng, trong khi từ bầu trời xám xịt những bông tuyết trắng rung rinh mang đến khung cảnh một mùa đông bất ngờ.\n\nGió đông, nơi nổi tiếng của Boston và vùng phụ cận, đã thổi mưa tuyết đập vào kính cửa sổ của căn phòng nơi Reuel Briggs ngồi giữa những cuốn sách và thiết bị thí nghiệm của mình. Phòng phục vụ cả ở và ngủ. Briggs có thể nói với bạn rằng sự trống trải và hoang vắng của căn hộ giống như cuộc sống của ông, nhưng ông là một người kín tiếng, biết cách chịu đựng trong im lặng. …",
+      "subjectsVi": [
+        "Tiểu thuyết huyền bí",
+        "Ethiopia -- Tiểu thuyết",
+        "Sinh viên y khoa người Mỹ gốc Phi -- Tiểu thuyết",
+        "Người da đen -- Bản sắc chủng tộc -- Tiểu thuyết"
+      ],
+      "translated": true
+    },
+    {
+      "id": "se~henry-seton-merriman~the-sowers",
+      "source": "standardebooks",
+      "sourceUrl": "https://standardebooks.org/ebooks/henry-seton-merriman/the-sowers",
+      "title": "The Sowers",
+      "authors": [
+        {
+          "name": "Merriman, Henry Seton",
+          "birth": null,
+          "death": null
+        }
+      ],
+      "subjects": [
+        "Russia -- Fiction"
+      ],
+      "categories": [
+        "classics"
+      ],
+      "coverUrl": "https://standardebooks.org/ebooks/henry-seton-merriman/the-sowers/downloads/cover-thumbnail.jpg",
+      "textUrl": "https://standardebooks.org/ebooks/henry-seton-merriman/the-sowers/text/single-page",
+      "preface": "The speaker finished his remark with a short laugh. He was a big, stout man; his name was Karl Steinmetz, and it is a name well known in the Government of Tver to this day. He spoke jerkily, as stout men do when they ride, and when he had laughed his good-natured, half-cynical laugh, he closed his lips beneath a huge gray mustache. So far as one could judge from the action of a square and deeply indented chin, his mouth was expressive at that time—and possibly at all times—of a humorous resignation. No reply was vouchsafed to him, and Karl Steinmetz bumped along on his little Cossack horse, which was stretched out at a gallop.\n\nEvening was drawing on. It was late in October, and a cold wind was driving from the northwest across a plain which for sheer dismalness of aspect may give points to Sahara and beat that abode of mental depression without an effort. So far as the eye could reach there was no habitation to break the line of horizon. …",
+      "prefaceLabel": "Opening",
+      "words": 105791,
+      "addedAt": 1793611644783,
+      "titleVi": "Người gieo hạt",
+      "prefaceVi": "Người nói kết thúc phần nhận xét của mình bằng một tiếng cười ngắn. Anh ta là một người đàn ông to lớn, mập mạp; tên ông ấy là Karl Steinmetz, và đó là một cái tên nổi tiếng trong Chính phủ Tver cho đến ngày nay. Anh ta nói một cách cộc lốc, như những người đàn ông mập mạp thường làm khi họ cưỡi ngựa, và khi anh ta cười nụ cười hiền hậu, nửa giễu cợt của mình, anh ta khép môi lại bên dưới bộ ria mép khổng lồ màu xám. Theo như người ta có thể đánh giá từ hành động của chiếc cằm vuông và lõm sâu, miệng của anh ta lúc đó biểu cảm - và có thể là mọi lúc - về một sự cam chịu hài hước. Không có câu trả lời nào được đưa ra cho anh ta, và Karl Steinmetz phi nước đại trên con ngựa Cossack nhỏ của mình.\n\nBuổi tối đã đến. Đó là vào cuối tháng 10, một cơn gió lạnh đang thổi từ phía tây bắc qua một đồng bằng mà vì vẻ ngoài ảm đạm có thể cho điểm về Sahara và đánh bại nơi ở của chứng trầm cảm tinh thần mà không cần nỗ lực. Trong chừng mực mà mắt có thể chạm tới thì không có nơi nào có thể phá vỡ đường chân trời. …",
+      "subjectsVi": [
+        "Nga -- Tiểu thuyết"
+      ],
+      "translated": true
+    },
+    {
+      "id": "se~ernst-junger~the-storm-of-steel~basil-creighton",
+      "source": "standardebooks",
+      "sourceUrl": "https://standardebooks.org/ebooks/ernst-junger/the-storm-of-steel/basil-creighton",
+      "title": "The Storm of Steel",
+      "authors": [
+        {
+          "name": "Jünger, Ernst",
+          "birth": null,
+          "death": null
+        }
+      ],
+      "subjects": [
+        "World War, 1914-1918",
+        "Memoir"
+      ],
+      "categories": [
+        "history"
+      ],
+      "coverUrl": "https://standardebooks.org/ebooks/ernst-junger/the-storm-of-steel/basil-creighton/downloads/cover-thumbnail.jpg",
+      "textUrl": "https://standardebooks.org/ebooks/ernst-junger/the-storm-of-steel/basil-creighton/text/single-page",
+      "preface": "This book does not pretend to be fiction, and if it provides entertainment it is on account of its sterling honesty. This same quality gives it an even higher value as a document, and it is as such that those will read it who desire to arrive at any conclusion at once profound and useful about the War.\n\nIts honesty, however, lends this book a further attraction. The young student of nineteen, who entered the German Army of his own free will, before the War was a year old, and “stuck it” in spite of twenty wounds and the usual disillusionment that we all experienced, displays the truly adventurous spirit. He is a real schoolboy, childishly delighted with life, forgivably boasting of his drinking capacity. He is no more brutal or insensitive than any other explorer, Arctic or Equatorial. He snipes at English Tommies or French poilus, and naively claims to have hit them, in a spirit of sportsmanship which contains no sting for us because we know the inevitable end. …",
+      "prefaceLabel": "Introduction",
+      "words": 90190,
+      "addedAt": 1793611644783,
+      "titleVi": "Cơn bão thép",
+      "prefaceVi": "Cuốn sách này không giả vờ là hư cấu, và nếu nó mang lại sự giải trí thì đó là nhờ tính trung thực tuyệt vời của nó. Chất lượng tương tự này mang lại cho nó một giá trị thậm chí còn cao hơn với tư cách là một tài liệu, và nó sẽ giúp những ai muốn đi đến bất kỳ kết luận nào một cách sâu sắc và hữu ích về Chiến tranh sẽ đọc nó.\n\nTuy nhiên, tính trung thực của nó khiến cuốn sách này trở nên hấp dẫn hơn nữa. Chàng sinh viên trẻ 19 tuổi, người đã tự nguyện gia nhập Quân đội Đức, trước Chiến tranh mới một tuổi, và “kẹt nó” bất chấp hai mươi vết thương và sự vỡ mộng thường thấy mà tất cả chúng ta đều trải qua, thể hiện tinh thần phiêu lưu thực sự. Anh ấy là một cậu học sinh thực thụ, vui vẻ như trẻ con với cuộc sống, dễ dàng khoe khoang khả năng uống rượu của mình. Anh ta không tàn bạo hay vô cảm hơn bất kỳ nhà thám hiểm nào khác, Bắc Cực hay Xích đạo. Anh ta bắn tỉa những tên Tommies của Anh hoặc poilus của Pháp, và tuyên bố một cách ngây thơ rằng đã đánh họ, với tinh thần thể thao không hề gây khó chịu cho chúng tôi vì chúng tôi biết cái kết không thể tránh khỏi. …",
+      "subjectsVi": [
+        "Chiến tranh thế giới, 1914-1918",
+        "Hồi ký"
+      ],
+      "translated": true
+    },
     {
       "id": "4507",
       "source": "gutenberg",
@@ -2975,25 +3548,22 @@
     }
   ],
   "lastAdded": [
-    "4507",
-    "368",
-    "2600",
-    "1399",
-    "8438",
-    "34901",
-    "863",
-    "1872",
-    "159",
-    "62",
-    "12",
-    "236",
-    "10630",
-    "6130",
-    "844",
-    "se~selma-lagerlof~the-emperor-of-portugallia~velma-swanston-howard",
-    "se~herman-whitaker~the-mystery-of-the-barranca",
-    "se~seneca~moral-letters-to-lucilius~richard-m-gummere",
-    "se~jules-verne~robur-the-conqueror~sampson-low-marston-searle-rivington"
+    "455",
+    "16317",
+    "135",
+    "28054",
+    "1232",
+    "132",
+    "834",
+    "42",
+    "18857",
+    "32",
+    "74",
+    "28",
+    "19",
+    "se~pauline-e-hopkins~of-one-blood",
+    "se~henry-seton-merriman~the-sowers",
+    "se~ernst-junger~the-storm-of-steel~basil-creighton"
   ],
   "store": [
     {
@@ -5032,7 +5602,11 @@
     }
   ],
   "skipped": [
-    "1"
+    "1",
+    "2",
+    "3",
+    "13",
+    "se~e-nesbit~beautiful-stories-from-shakespeare"
   ],
   "version": 2
 }
