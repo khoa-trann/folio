@@ -33,6 +33,21 @@ Tìm cùng lúc trong mọi nguồn mở và trên thị trường:
 Bộ lọc: Tất cả / Chỉ sách đọc miễn phí / Sách trên thị trường. Không nhập từ khoá thì có thể duyệt toàn bộ kho Gutenberg theo thể loại.
 Kết quả cũng hiển thị dạng slide và tự tải thêm khi cuộn gần cuối.
 
+## Trình đọc (giống Apple Books)
+
+- **Aa**: giao diện Sáng / Giấy / Tối / Đen, 4 phông chữ, cỡ chữ, giãn dòng, khổ chữ, căn đều. Chỉ áp dụng trong trang đọc.
+- **☰**: mục lục theo chương, danh sách đánh dấu trang, ghi chú; tìm trong sách (⌕ hoặc Ctrl+F).
+- **☆**: đánh dấu trang (phím `b`).
+- Bôi đen chữ → tô sáng 4 màu, ghi chú, sao chép, dịch nhanh đoạn đó. Xuất ghi chú ra file .txt.
+- Thanh dưới: chương hiện tại, số phút còn lại trong chương, % đã đọc. Thanh công cụ tự ẩn khi cuộn xuống.
+
+## Tủ sách
+
+- Tiếp tục đọc, Đang đọc, Muốn đọc (nút “+ Muốn đọc” trên slide), Đã đọc xong (tự đánh dấu khi đọc tới cuối), Đã tải xuống, Ghi chú & đánh dấu.
+- Mục tiêu đọc mỗi ngày (5/15/30/60 phút), chuỗi ngày liên tiếp, biểu đồ 7 ngày.
+- **Sách của tôi**: nhập file **EPUB / TXT không khoá DRM** (chọn file hoặc kéo thả). File được đọc và lưu ngay trong trình duyệt; sách có DRM sẽ được báo là không mở được. PDF chưa hỗ trợ.
+- Dữ liệu cá nhân (tiến độ, ghi chú…) lưu trên từng thiết bị, không đồng bộ giữa các máy.
+
 ## Tính năng
 
 - **Mỗi sách một slide**: cuộn chuột / vuốt / phím ↑ ↓ để chuyển. Mỗi lần sang slide, bìa sách hiện dần từ trên xuống và chữ trượt xuống vào vị trí.

@@ -524,7 +524,7 @@ const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host}`);
   const p = url.pathname;
   if (p.startsWith('/api/')) {
-    const bucket = p === '/api/search' || p === '/api/details' ? 'search' : /\/vi$|\/meta$/.test(p) ? 'translate' : 'api';
+    const bucket = p === '/api/search' || p === '/api/details' ? 'search' : /\/vi$|\/meta$|^\/api\/translate$/.test(p) ? 'translate' : 'api';
     if (rateLimited(req, bucket)) return sendJson(res, 429, { error: 'Quá nhiều yêu cầu, thử lại sau một phút.' });
   }
   try {
@@ -549,6 +549,19 @@ const server = http.createServer(async (req, res) => {
       const page = Math.max(1, Math.min(50, parseInt(url.searchParams.get('page'), 10) || 1));
       const cat = url.searchParams.get('cat') || '';
       return sendJson(res, 200, await search({ q, scope, page, cat: CATEGORIES.some(c => c.key === cat) ? cat : '' }));
+    }
+
+    // Translate paragraphs sent by the client (imported books, selected passages). Nothing is stored.
+    if (p === '/api/translate' && req.method === 'POST') {
+      let body = '';
+      for await (const chunk of req) {
+        body += chunk;
+        if (body.length > 120000) return sendJson(res, 413, { error: 'Đoạn văn quá dài' });
+      }
+      let texts;
+      try { texts = JSON.parse(body).texts; } catch { return sendJson(res, 400, { error: 'Bad JSON' }); }
+      if (!Array.isArray(texts) || !texts.length || texts.length > 400 || texts.some(t => typeof t !== 'string')) return sendJson(res, 400, { error: 'texts must be 1–400 strings' });
+      return sendJson(res, 200, { texts: await translateMany(texts.map(t => t || '.')) });
     }
 
     if (p === '/api/details') {

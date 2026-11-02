@@ -1,8 +1,8 @@
 // Service worker: app shell offline, catalog network-first, covers cache-first.
-const SHELL = 'folio-shell-v4';
+const SHELL = 'folio-shell-v5';
 const DATA = 'folio-data-v1';
 const COVERS = 'folio-covers';
-const SHELL_FILES = ['/', '/index.html', '/styles.css', '/app.js', '/manifest.webmanifest', '/icon.svg'];
+const SHELL_FILES = ['/', '/index.html', '/styles.css', '/app.js', '/manifest.webmanifest', '/icon.svg', '/import.js'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(SHELL).then(c => c.addAll(SHELL_FILES)).then(() => self.skipWaiting()));
