@@ -1028,7 +1028,7 @@
       for (let k = current; k < end; k++) left += words[k];
       const mins = Math.max(1, Math.round(left / 230));
       const chapter = c >= 0 ? (translating && vi[toc[c].i] ? vi[toc[c].i].t : toc[c].t) : '';
-      stLeft.textContent = `${chapter ? chapter.slice(0, 40) + ' · ' : ''}còn ${mins} phút ${c >= 0 && end < en.length ? 'trong chương' : 'là hết sách'}`;
+      stLeft.textContent = `${chapter ? chapter.slice(0, 40) + ' · ' : ''}còn ${mins} phút ${end < en.length ? (c >= 0 ? 'trong chương' : 'tới chương đầu') : 'là hết sách'}`;
       stRight.textContent = p + '%';
       const near = M.bookmarks.some(b => b.idx >= current && b.idx <= current + 2);
       bmBtn.textContent = near ? '★' : '☆';
