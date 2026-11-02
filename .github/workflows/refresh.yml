@@ -1,0 +1,34 @@
+# Every 3 days: add new books, refresh the paid charts, translate, and commit the snapshot.
+# The commit triggers a Render redeploy, so the free (ephemeral-disk) server always starts with fresh data.
+name: Refresh library
+
+on:
+  schedule:
+    - cron: "0 1 */3 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Refresh catalog
+        run: node server.js --refresh-once
+
+      - name: Commit snapshot
+        run: |
+          git config user.name "folio-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/catalog.json data/covers data/vi
+          git diff --cached --quiet && echo "No changes" && exit 0
+          git commit -m "Refresh library $(date -u +%Y-%m-%d)"
+          git push

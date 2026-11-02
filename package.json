@@ -1,0 +1,13 @@
+{
+  "name": "folio-ebook-reader",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Online/offline ebook reader with a 3-day catalog refresh",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

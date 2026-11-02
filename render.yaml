@@ -1,0 +1,17 @@
+# Render Blueprint — free web service for Folio.
+# Render → New → Blueprint → pick this repository.
+services:
+  - type: web
+    name: folio
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: echo "No build step"
+    startCommand: node server.js
+    healthCheckPath: /api/catalog
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: REFRESH_TOKEN
+        generateValue: true

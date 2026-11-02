@@ -1,0 +1,7 @@
+node_modules/
+# Large or regenerated on demand
+data/texts/
+data/pg_catalog.csv
+# Local editor/agent settings
+.claude/
+*.log
