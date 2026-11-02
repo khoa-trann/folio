@@ -149,7 +149,8 @@ img { display: block; max-width: 100%; }
 }
 .cover-panel .no { position: absolute; top: 18px; left: 18px; font-size: 10px; color: var(--muted); }
 .book-cover {
-  height: min(70vh, 640px); width: auto; max-width: 100%; aspect-ratio: 2 / 3; object-fit: cover;
+  /* Natural proportions: some covers (e.g. Gutenberg's generated ones) are wider than 2:3. */
+  height: min(70vh, 640px); width: auto; max-width: 100%; object-fit: contain;
   box-shadow: 0 1px 0 rgba(0,0,0,.08), 0 30px 50px -24px rgba(0,0,0,.55);
   background: linear-gradient(135deg, #e2e1de, #cfcdc8);
 }
